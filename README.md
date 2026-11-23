@@ -2,6 +2,10 @@
 
 A lightweight Winamp Classic-inspired desktop audio player built with Python and PyQt6.
 
+<p align="center">
+  <img src="icons/yuc_logo_512.png" width="180" alt="YUC Player Logo">
+</p>
+
 # Installation Guide
 
 ## Requirements
