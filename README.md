@@ -65,6 +65,9 @@ If new dependencies have been added, run the installer again:
 ```bash
 ./install.sh
 ```
+## Preview
+
+![YUC Player](screenshots/yuc-player.png)
 
 ## Notes
 
