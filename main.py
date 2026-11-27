@@ -261,7 +261,7 @@ def _compute_7_bands_pure_python(samples: list[float], max_rows: int) -> list[fl
 
 
 class AudioAnalyzerThread(QThread):
-  """Читає PCM через ffmpeg та віддає 7 частотних смуг (0..max_rows)."""
+  """Reads PCM via ffmpeg and outputs 7 frequency bands (0..max_rows)."""
 
   bands_ready = pyqtSignal(list)
 
@@ -2042,7 +2042,7 @@ class YucPlayer(QWidget):
       p.drawText(
           self.bg_pixmap.rect(),
           Qt.AlignmentFlag.AlignCenter,
-          "main.png (540x540) не знайдено\n[Тягни за titlebar 0..451, 0..25]",
+          "main.png (540x540) not found\n[Drag titlebar 0..451, 0..25]",
       )
       p.end()
 
@@ -2977,9 +2977,9 @@ class YucPlayer(QWidget):
   def on_add_songs(self):
     files, _ = QFileDialog.getOpenFileNames(
         self,
-        "Додати музику",
+        "Add music",
         self.base_dir,
-        "Аудіофайли (*.mp3 *.wav *.ogg *.flac *.m4a *.opus *.aac);;Усі файли (*)",
+        "Audio files (*.mp3 *.wav *.ogg *.flac *.m4a *.opus *.aac);;All files (*)",
     )
     if files:
       self.playlist_view.add_tracks(files, auto_sort_alpha=True)
